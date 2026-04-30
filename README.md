@@ -201,7 +201,7 @@ https://drive.google.com/file/d/1NqTozBiEL7ze5oo6O4G40QbH66qhChCp/view?usp=drive
 
 ### Voice Recognition Accuracy
 
-* Handled using proper locale settings (`en_IN`, `te_IN`)
+* Handled using proper locale settings (`en_IN`, `hi_IN`)
 
 ### State Persistence
 
