@@ -1,6 +1,6 @@
-#  Voice-Based Multilingual Onboarding App (Flutter + Firebase)
+# Voice-Based Multilingual Onboarding App (Flutter + Firebase)
 
-##  Overview
+## Overview
 
 This project is a **voice-enabled, multilingual onboarding and profile builder application** developed using **Flutter and Firebase**.
 
@@ -14,9 +14,9 @@ The app allows users to:
 
 ---
 
-##  Key Features
+## Key Features
 
-###  Authentication
+### Authentication
 
 * Email & Password Login
 * Google Sign-In
@@ -24,7 +24,7 @@ The app allows users to:
 
 ---
 
-###  Smart Onboarding Flow
+### Smart Onboarding Flow
 
 * Multi-step question-based onboarding:
 
@@ -36,33 +36,33 @@ The app allows users to:
 * Progress indicator for better UX
 * Supports both:
 
-  *  Typing input
-  *  Voice input
+  * Typing input
+  * Voice input
 
 ---
 
-###  Voice Integration
+### Voice Integration
 
 * **Speech-to-Text (STT)** using `speech_to_text`
-* Converts user speech → text in real-time
+* Converts user speech to text in real time
 * Supports multiple languages
 * Mic toggle with listening state
 
 ---
 
-###  Text-to-Speech (TTS)
+### Text-to-Speech (TTS)
 
 * Questions are read aloud automatically
 * Enhances accessibility and user experience
 
 ---
 
-###  Multilingual Support
+### Multilingual Support
 
 * Supported languages:
 
-  * English 
-  * Hindi(Regional)
+  * English
+  * Hindi (regional)
 * Dynamic switching:
 
   * UI text
@@ -71,7 +71,7 @@ The app allows users to:
 
 ---
 
-###  Profile Management
+### Profile Management
 
 * Displays structured user data:
 
@@ -84,15 +84,15 @@ The app allows users to:
 
 ---
 
-###  Edit Functionality
+### Edit Functionality
 
-* Users can update profile anytime
-* Existing data is can be edited
+* Users can update their profile anytime
+* Existing data can be edited
 * Changes are synced with Firestore
 
 ---
 
-###  Firebase Integration
+### Firebase Integration
 
 * **Firebase Auth** → Authentication
 * **Firestore** → Data storage
@@ -100,16 +100,15 @@ The app allows users to:
 
 ---
 
-##  Architecture
+## Architecture
 
 The app follows a **clean and scalable architecture** using Provider for state management.
 
-![alt text](image.png)
-```
+![Architecture](image.png)
 
 ---
 
-##  Application Flow
+## Application Flow
 
 1. User logs in (Email/Google)
 2. Selects preferred language
@@ -119,12 +118,12 @@ The app follows a **clean and scalable architecture** using Provider for state m
    * Voice OR typing
 5. Data is saved to Firestore
 6. Profile screen displays user data
-7. User can edit profile anytime
+7. User can edit the profile anytime
 8. Logout option available
 
 ---
 
-##  State Management
+## State Management
 
 * Implemented using **Provider**
 * Handles:
@@ -135,7 +134,7 @@ The app follows a **clean and scalable architecture** using Provider for state m
 
 ---
 
-##  Tech Stack
+## Tech Stack
 
 * **Flutter** (Frontend)
 * **Firebase Auth**
@@ -146,7 +145,7 @@ The app follows a **clean and scalable architecture** using Provider for state m
 
 ---
 
-##  Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repository
 
@@ -169,7 +168,7 @@ flutter pub get
 * Create Firebase project
 * Add Android app
 * Download `google-services.json`
-* Place in:
+* Place it in:
 
 ```
 android/app/
@@ -192,39 +191,39 @@ flutter run
 
 ---
 
-##  Demo
+## Demo
 
 https://drive.google.com/file/d/1NqTozBiEL7ze5oo6O4G40QbH66qhChCp/view?usp=drive_link
 
 ---
 
-##  Challenges & Solutions
+## Challenges & Solutions
 
 ### Voice Recognition Accuracy
 
-* Handled using proper locale settings (`en_IN`, `hi_IN`)
+* Handled using proper locale settings (`en_IN`, `te_IN`)
 
-###  State Persistence
+### State Persistence
 
 * Used Firebase Auth listener for auto-login
 
-###  Edit Flow Issues
+### Edit Flow Issues
 
-* Fixed by preloading existing data into onboarding provider
+* Fixed by preloading existing data into the onboarding provider
 
 ---
 
-##  Future Improvements
+## Future Improvements
 
 * Add more languages
 * AI-based skill extraction from speech
 * Voice confirmation system
 * Dark mode UI
-* Backend validation & analytics
+* Backend validation and analytics
 
 ---
 
-##  Author
+## Author
 
 **Baddam Harshavardhan**
 
